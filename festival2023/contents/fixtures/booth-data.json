@@ -1,0 +1,12 @@
+[
+  {
+    "model": "contents.booth",
+    "fields": {
+      "name": "멋쟁이사자처럼",
+      "date": "day1",
+      "introduce": "한줄소개",
+      "notice": "공지사항",
+      "image": "booth_image/cute.jpeg"
+    }
+  }
+]

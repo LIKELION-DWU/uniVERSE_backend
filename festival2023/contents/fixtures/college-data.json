@@ -1,0 +1,74 @@
+[
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college1",
+      "college": "인문대학",
+      "total": 1161
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college2",
+      "college": "사회과학대학",
+      "total": 1338
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college3",
+      "college": "자연정보과학대학",
+      "total": 1289
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college4",
+      "college": "약학대학",
+      "total": 250
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college5",
+      "college": "예술대학",
+      "total": 649
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college6",
+      "college": "디자인대학",
+      "total": 772
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college7",
+      "college": "공연예술대학",
+      "total": 676
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college8",
+      "college": "문화지식융합대학",
+      "total": 536
+    }
+  },
+  {
+    "model": "contents.college",
+    "fields": {
+      "college_id": "college9",
+      "college": "미래인재융합대학",
+      "total": 310
+    }
+  }
+]
