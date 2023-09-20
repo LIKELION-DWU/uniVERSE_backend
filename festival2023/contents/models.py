@@ -31,7 +31,7 @@ class Student(models.Model) : # 학생
         return self.stu_id
 
 class Booth(models.Model) : # 부스 
-    booth_id = models.IntegerField(verbose_name="부스 커스텀 ID", primary_key=True, max_length=10, default="10401")
+    booth_id = models.IntegerField(verbose_name="부스 커스텀 ID", primary_key=True)
     name = models.CharField(verbose_name="부스이름", max_length=128)
     category = models.CharField(verbose_name="부스 카테고리(날짜별)", choices=DATES, default='day1', max_length=10)
     date = models.TextField(verbose_name="일시", default="10.04 - 10.06")
