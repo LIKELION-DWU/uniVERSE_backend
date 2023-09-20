@@ -143,7 +143,7 @@ class BoothSearchView(generics.ListAPIView):
                 'date': booth.date,
                 'place': booth.place,
                 'introduce': booth.introduce,
-                # 'image': booth.image,
+                'image': booth.image, #postMan에서만 주석처리
             })
 
         data = {
