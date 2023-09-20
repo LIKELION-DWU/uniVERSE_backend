@@ -1,13 +1,14 @@
 from django.contrib import admin
 from .models import College, Student, Booth, Book
 
-from .serializers import StudentSerializer, CollegeSerializer
+from .serializers import StudentSerializer, CollegeSerializer,BookSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import BoothSearchSerializer
 
 from rest_framework import generics, filters, status
 from rest_framework.pagination import PageNumberPagination
+from datetime import datetime
 
 # 단과대항전 학생 정보 입력하는 view
 class StudentInfoView(APIView):
@@ -144,3 +145,22 @@ class BoothSearchView(generics.ListAPIView):
             'results_count': results_count
         }
         return Response(data)
+    
+#방명록 생성
+class GuestBookCreateView(APIView):
+    def post(self, request):
+        serializer = BookSerializer(data=request.data)
+        #micro 초 단위
+        now = datetime.now().replace(microsecond=0)
+        request.data['time'] = now.strftime('%Y-%m-%d %H:%M:%S.%f')
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)       
+
+#방명록 목록
+class GuestBookListView(APIView):
+    def get(self, request):
+        books = Book.objects.all()
+        serializer = BookSerializer(books, many=True)
+        return Response(serializer.data)
