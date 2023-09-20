@@ -1,10 +1,9 @@
 from django.contrib import admin
 from .models import College, Student, Booth, Book
 
-from .serializers import StudentSerializer, CollegeSerializer,BookSerializer
+from .serializers import StudentSerializer, CollegeSerializer, BookSerializer, BoothSearchSerializer, BoothDetialSerailizer, BoothSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import BoothSearchSerializer
 
 from rest_framework import generics, filters, status
 from rest_framework.pagination import PageNumberPagination
@@ -164,3 +163,32 @@ class GuestBookListView(APIView):
         books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data)
+
+# 부스배치도 목록 
+# day01
+class BoothDay1ListView(APIView) :
+    def get(self, request) : 
+        booth1 = Booth.objects.filter(category='day1')
+        serializer = BoothSerializer(booth1, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+# day02
+class BoothDay2ListView(APIView) :
+    def get(self, request) : 
+        booth2 = Booth.objects.filter(category='day2')
+        serializer = BoothSerializer(booth2, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+# day03
+class BoothDay3ListView(APIView) :
+    def get(self, request) : 
+        booth3 = Booth.objects.filter(category='day3')
+        serializer = BoothSerializer(booth3, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+# 부스배치도 상세페이지
+class BoothDetailView(APIView) :
+    def get(self, request, booth_id) :
+        booth = Booth.objects.get(pk=booth_id)
+        serailizer = BoothSerializer(booth)
+        return Response(serailizer.data, status=status.HTTP_200_OK)
