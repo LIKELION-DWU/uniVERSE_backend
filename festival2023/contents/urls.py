@@ -11,5 +11,5 @@ urlpatterns =[
     path('day1-booth/', views.BoothDay1ListView.as_view(), name="day1-booth"), # 성주 - 부스 목록
     path('day2-booth/', views.BoothDay2ListView.as_view(), name="day2-booth"), 
     path('day3-booth/', views.BoothDay3ListView.as_view(), name="day3-booth"), 
-    path('booth-detail/<int:booth_id>/', views.BoothDetailView.as_view(), name="booth-detail") # 성주 - 부스 상세
+    path('booth-detail/<int:booth_id>/', views.BoothDetailView.as_view(), name="booth-detail"), # 성주 - 부스 상세
 ]

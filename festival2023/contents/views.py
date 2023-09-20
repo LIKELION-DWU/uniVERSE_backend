@@ -1,13 +1,12 @@
 from django.contrib import admin
 from .models import College, Student, Booth, Book
-
 from .serializers import StudentSerializer, CollegeSerializer, BookSerializer, BoothSearchSerializer, BoothDetialSerailizer, BoothSerializer
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
 from rest_framework import generics, filters, status
 from rest_framework.pagination import PageNumberPagination
 from datetime import datetime
+from django.db.models import Q 
 
 # 단과대항전 학생 정보 입력하는 view
 class StudentInfoView(APIView):
@@ -106,27 +105,30 @@ class CollegeRankListView(APIView):
 
         return participation_rate
 
-# 소은 - 검색 기능 
+# 검색
 class BoothSearchView(generics.ListAPIView):
     serializer_class = BoothSearchSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['name']
+    search_fields = ['name', 'category']
 
     pagination_class = PageNumberPagination
 
     def get_queryset(self):
         search_term = self.request.query_params.get('name')
+        category_term = self.request.query_params.get('category')
+
+        queryset = Booth.objects.all()
+
         if search_term:
-            queryset = Booth.objects.filter(name__icontains=search_term)
-        else:
-            queryset = Booth.objects.all()
+            if not category_term:
+                category_term = 'day1'
+            queryset = queryset.filter(Q(name__icontains=search_term) & Q(category=category_term))
+
         return queryset
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
-        search_term = self.request.query_params.get('name')
-        if search_term:
-            queryset = queryset.filter(name__icontains=search_term)
+        
         results_count = queryset.count()  # 검색 결과 수 계산
 
         if results_count == 0:
@@ -135,8 +137,13 @@ class BoothSearchView(generics.ListAPIView):
         serialized_data = []  # 검색결과 직렬화
         for booth in queryset:
             serialized_data.append({
+                'booth_id': booth.booth_id,
                 'name': booth.name,
-                'introduce': booth.introduce
+                'category': booth.category,
+                'date': booth.date,
+                'place': booth.place,
+                'introduce': booth.introduce,
+                # 'image': booth.image,
             })
 
         data = {
@@ -186,9 +193,10 @@ class BoothDay3ListView(APIView) :
         serializer = BoothSerializer(booth3, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-# 부스배치도 상세페이지
+# 부스배치도 상세페이지 - 성주 
 class BoothDetailView(APIView) :
     def get(self, request, booth_id) :
         booth = Booth.objects.get(pk=booth_id)
         serailizer = BoothSerializer(booth)
         return Response(serailizer.data, status=status.HTTP_200_OK)
+
