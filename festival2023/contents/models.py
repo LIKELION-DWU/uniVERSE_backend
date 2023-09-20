@@ -31,10 +31,12 @@ class Student(models.Model) : # 학생
         return self.stu_id
 
 class Booth(models.Model) : # 부스 
+    booth_id = models.IntegerField(verbose_name="부스 커스텀 ID", primary_key=True, max_length=10, default="10401")
     name = models.CharField(verbose_name="부스이름", max_length=128)
-    date = models.CharField(verbose_name="부스날짜", choices=DATES, default='day1', max_length=10)
-    introduce = models.TextField(verbose_name="한줄소개")
-    notice = models.TextField(verbose_name="공지사항")
+    category = models.CharField(verbose_name="부스 카테고리(날짜별)", choices=DATES, default='day1', max_length=10)
+    date = models.TextField(verbose_name="일시", default="10.04 - 10.06")
+    place = models.TextField(verbose_name="장소", default="동덕여자대학교")
+    introduce = models.TextField(verbose_name="내용")
     image = models.ImageField(verbose_name="부스 사진", blank=True, null=True, upload_to='booth-image')
 
     def __str__(self):

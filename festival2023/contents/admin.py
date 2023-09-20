@@ -8,7 +8,7 @@ class College_list(admin.ModelAdmin):
 admin.site.register(models.College, College_list)
 
 class Booth_list(admin.ModelAdmin) :
-    list_display = ('name', 'date', 'introduce')
+    list_display = ('booth_id', 'name', 'category', 'date', 'place', 'introduce')
 admin.site.register(models.Booth, Booth_list)
 
 admin.site.register(models.Student)
