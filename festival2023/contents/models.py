@@ -54,4 +54,4 @@ class Book(models.Model) : # 방명록
         super(Book, self).save(*args, **kwargs)
     
     def __str__(self):
-        return self.time
+        return self.time.strftime('%Y-%m-%d %H:%M:%S') #수정
