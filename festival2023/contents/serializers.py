@@ -21,3 +21,8 @@ class BookSerializer(ModelSerializer):
     class Meta:
         model = models.Book
         fields = '__all__'
+
+class BoothSearchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Booth
+        fields = ['name']
