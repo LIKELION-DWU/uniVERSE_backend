@@ -1,0 +1,578 @@
+[
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10401,
+      "name": "아르테미솜",
+      "category": "day1",
+      "date": "10.04 - 10.06 12:00-소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "참가자들은 다트를 던져 직접 나만의 별자리를 생성합니다. 솜솜이들이 달과 화살의 여신 ‘아르테미스’가 되어 오늘 하루를 기념해보세요!🌟",
+      "image": "booth_image/104/10401.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10402,
+      "name": "도전! 솜든벨 - 달나라 착륙 대작전",
+      "category": "day1",
+      "date": "10.04 18:00~19:00",
+      "place": "동덕여자대학교 동인관 강당",
+      "introduce": "참가자들은 달에 갈 수 있는 기회를 얻기 위해 서바이벌 단체 O/X 퀴즈를 풀어야 하며, 문제는 동덕여대, 노래, 우주 등의 주제로 이루어져 있습니다. 최후의 3인에게는 달에 착륙할 수 있는 기회와 어마어마한 상품이 주어집니다.\n상품 : 1위 - 인스탁스 미니 12\n2위 - 오쏘몰 비타민\n3위 - 올리브영 상품권\n",
+      "image": "booth_image/104/10402.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10403,
+      "name": "이벤트 티켓",
+      "category": "day1",
+      "date": "10.04 - 10.06 12:00 매일 선착순 60장 배부",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "우주선 티켓을 발급받고 동덕 uniVERSE로 떠나보세요! 이벤트 티켓은 매일 SNS(인스타그램, 에브리타임) 해시태그 인증 이벤트를 통해 선착순으로 발급받으실 수 있습니다.\n",
+      "image": "booth_image/104/10403.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10404,
+      "name": "스탬프 투어",
+      "category": "day1",
+      "date": "10.04 - 10.06 ",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "축제운영위원회에서 준비한 다양한 프로그램과 제휴 업체 부스를 체험하고 선물도 받아가세요! 스탬프 투어 용지는 인포 부스에서 받을 수 있습니다.",
+      "image": "booth_image/104/10404.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10405,
+      "name": "Flea-net D",
+      "category": "day1",
+      "date": "10.04 - 10.06 13:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "학우분들이 직접 준비하신 물품들을 구경하고, 마음에 드는 물건도 득템해가세요!",
+      "image": "booth_image/104/10405.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10406,
+      "name": "우주 속 지구를 낚아라",
+      "category": "day1",
+      "date": "10.04 - 10.06 15:00~19:00 (재정비 시간-17:00~17:20)",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "깜깜한 우주에서 지구를 찾고 상품도 얻어가세요!",
+      "image": "booth_image/104/10406.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10407,
+      "name": "솜솜타로",
+      "category": "day1",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "솜솜 타로에서 나의 운세를 확인해보세요! 타로 전문 학우분들께 직접 사주 타로를 통해 나의 운세를 알아볼 수 있습니다.",
+      "image": "booth_image/104/10407.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10408,
+      "name": "무엇이든 뽑아보솜",
+      "category": "day1",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "오늘의 운세를 뽑아보세요 🍀",
+      "image": "booth_image/104/10408.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10409,
+      "name": "솜튼캔디",
+      "category": "day1",
+      "date": "10.04 - 10.05 14:00 재료 소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": " 동덕 uniVERSE만의 특별한 우주 간식 솜사탕! 대동제의 달달함을 느끼고 싶다면 솜튼캔디 shop으로 달려오세요!",
+      "image": "booth_image/104/10409.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10410,
+      "name": "솜물조물",
+      "category": "day1",
+      "date": "10.04 - 10.05 15:00 재료 소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "나만의 우주 슬라임을 만들어보세요!",
+      "image": "booth_image/104/10410.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10411,
+      "name": "솜612 포토존",
+      "category": "day1",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "축제에서 인생샷을 건지고 싶지 않으신가요? 밝게 빛나는 달 포토존에서 인생 사진을 건져보세요!",
+      "image": "booth_image/104/10411.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10412,
+      "name": "솜솜 우주필름",
+      "category": "day1",
+      "date": "10/4 - 10/6 12:00 ~ 22:00",
+      "place": "동덕여대 민주광장 앞",
+      "introduce": "맞춤제작 2023 우주 컨셉 인생 네컷 ‘우주필름'\n\n매년 큰 화제를 불러일으키는 포토부스, 이번 축제를 위해 특별 제작된 프레임으로 인생사진 찍어가세요! 👾\n\n가격: 1+1 4000원 (현금, 카드 가능)",
+      "image": "booth_image/104/10412.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10413,
+      "name": "솜솜 은하수 광장",
+      "category": "day1",
+      "date": "10.04 - 10.05 18:00 - 22:00 /10.06 17:00 - 21:00",
+      "place": "운동장 구령대 맞은편 (나무데크)",
+      "introduce": "🌌 솜솜은하수광장 🌌\n\n시끌벅적한 축제 속에서 찾은 여유\n\n<솜솜은하수광장>에서 친구, 선배, 후배와 함께 축제날 밤의 낭만을 즐겨보세요 🌝",
+      "image": "booth_image/104/10413.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10414,
+      "name": "솜락실 ; 솜솜지구오락실 ",
+      "category": "day1",
+      "date": "10.04 - 10.06 12:00~20:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "진정한 우주인이 되고 싶어 우주로 향하는 솜솜, 그런데...?!\n우주인이 되기 위한 체력단련실, 솜락실로 솜솜이분들을 초대합니다!!💪\n",
+      "image": "booth_image/104/10414.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10415,
+      "name": "솜플래닛 타꾸샵",
+      "category": "day1",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "우주인이 된 솜솜이, 몸에서 우주의 표식이 피어나기 시작한다!!🛸 우주의 표식을 단 솜솜이를 발견하면 외계어로 인사해주자! 삐리빠라뽀👽",
+      "image": "booth_image/104/10415.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10416,
+      "name": "(S)FACE PAINTING",
+      "category": "day1",
+      "date": "10.4 - 10.6",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "반짝이는 우주를 품다🌌\n오직 동덕 uniVERSE 에서만 즐길 수 있는 글리터 페이스 페인팅으로 축제의 분위기를 더욱 즐겨보세요!",
+      "image": "booth_image/104/10416.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10501,
+      "name": "아르테미솜",
+      "category": "day2",
+      "date": "10.04 - 10.06 12:00-소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "참가자들은 다트를 던져 직접 나만의 별자리를 생성합니다. 솜솜이들이 달과 화살의 여신 ‘아르테미스’가 되어 오늘 하루를 기념해보세요!🌟",
+      "image": "booth_image/105/10501.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10502,
+      "name": "솜솜플래닛 ",
+      "category": "day2",
+      "date": "10.05 20:00~22:00",
+      "place": "동덕여자대학교 백주년기념관 계단 앞",
+      "introduce": "선선한 가을 밤, 동덕여대 학우들의 멋진 공연을 감상할 수 있습니다. 백주년 계단 앞에서 여유를 즐겨보세요.\n",
+      "image": "booth_image/105/10502.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10503,
+      "name": "이벤트 티켓",
+      "category": "day2",
+      "date": "10.04 - 10.06 12:00 매일 선착순 60장 배부",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "우주선 티켓을 발급받고 동덕 uniVERSE로 떠나보세요! 이벤트 티켓은 매일 SNS(인스타그램, 에브리타임) 해시태그 인증 이벤트를 통해 선착순으로 발급받으실 수 있습니다.\n",
+      "image": "booth_image/105/10503.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10504,
+      "name": "스탬프 투어",
+      "category": "day2",
+      "date": "10.04 - 10.06 ",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "축제운영위원회에서 준비한 다양한 프로그램과 제휴 업체 부스를 체험하고 선물도 받아가세요! 스탬프 투어 용지는 인포 부스에서 받을 수 있습니다.",
+      "image": "booth_image/105/10504.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10505,
+      "name": "Flea-net D",
+      "category": "day2",
+      "date": "10.04 - 10.06 13:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "학우분들이 직접 준비하신 물품들을 구경하고, 마음에 드는 물건도 득템해가세요!",
+      "image": "booth_image/105/10505.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10506,
+      "name": "우주 속 지구를 낚아라",
+      "category": "day2",
+      "date": "10.04 - 10.06 15:00~19:00 (재정비 시간-17:00~17:20)",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "깜깜한 우주에서 지구를 찾고 상품도 얻어가세요!",
+      "image": "booth_image/105/10506.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10507,
+      "name": "솜솜타로",
+      "category": "day2",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "솜솜 타로에서 나의 운세를 확인해보세요! 타로 전문 학우분들께 직접 사주 타로를 통해 나의 운세를 알아볼 수 있습니다.",
+      "image": "booth_image/105/10507.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10508,
+      "name": "무엇이든 뽑아보솜",
+      "category": "day2",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "오늘의 운세를 뽑아보세요 🍀",
+      "image": "booth_image/105/10508.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10509,
+      "name": "솜튼캔디",
+      "category": "day2",
+      "date": "10.04 - 10.05 14:00 재료 소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": " 동덕 uniVERSE만의 특별한 우주 간식 솜사탕! 대동제의 달달함을 느끼고 싶다면 솜튼캔디 shop으로 달려오세요!",
+      "image": "booth_image/105/10509.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10510,
+      "name": "솜물조물",
+      "category": "day2",
+      "date": "10.04 - 10.05 15:00 재료 소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "나만의 우주 슬라임을 만들어보세요!",
+      "image": "booth_image/105/10510.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10511,
+      "name": "솜612 포토존",
+      "category": "day2",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "축제에서 인생샷을 건지고 싶지 않으신가요? 밝게 빛나는 달 포토존에서 인생 사진을 건져보세요!",
+      "image": "booth_image/105/10511.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10512,
+      "name": "솜솜 우주필름",
+      "category": "day2",
+      "date": "10/4 - 10/6 12:00 ~ 22:00",
+      "place": "동덕여대 민주광장 앞",
+      "introduce": "맞춤제작 2023 우주 컨셉 인생 네컷 ‘우주필름'\n\n매년 큰 화제를 불러일으키는 포토부스, 이번 축제를 위해 특별 제작된 프레임으로 인생사진 찍어가세요! 👾\n\n가격: 1+1 4000원 (현금, 카드 가능)",
+      "image": "booth_image/105/10512.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10513,
+      "name": "솜솜 은하수 광장",
+      "category": "day2",
+      "date": "10.04 - 10.05 18:00 - 22:00 /10.06 17:00 - 21:00",
+      "place": "운동장 구령대 맞은편 (나무데크)",
+      "introduce": "🌌 솜솜은하수광장 🌌\n\n시끌벅적한 축제 속에서 찾은 여유\n\n<솜솜은하수광장>에서 친구, 선배, 후배와 함께 축제날 밤의 낭만을 즐겨보세요 🌝",
+      "image": "booth_image/105/10513.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10514,
+      "name": "솜락실 ; 솜솜지구오락실 ",
+      "category": "day2",
+      "date": "10.04 - 10.06 12:00~20:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "진정한 우주인이 되고 싶어 우주로 향하는 솜솜, 그런데...?!\n우주인이 되기 위한 체력단련실, 솜락실로 솜솜이분들을 초대합니다!!💪\n",
+      "image": "booth_image/105/10514.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10515,
+      "name": "솜플래닛 타꾸샵",
+      "category": "day2",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "우주인이 된 솜솜이, 몸에서 우주의 표식이 피어나기 시작한다!!🛸 우주의 표식을 단 솜솜이를 발견하면 외계어로 인사해주자! 삐리빠라뽀👽",
+      "image": "booth_image/105/10515.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10516,
+      "name": "🌌우주특공솜: 비밀서류를 찾아라!🚀",
+      "category": "day2",
+      "date": "10.5 - 10.6",
+      "place": "대학원 403호",
+      "introduce": "평화롭던 동덕의 숨겨진 비밀기지... \n그러던 어느 날 누군가 몰래 들어와 동덕의 TOP SECRET을 훔쳐갔다..!?\n우주특공솜이 되어 비밀서류를 훔쳐간 범인을 찾아 지구를 지켜주세요!\n",
+      "image": "booth_image/105/10516.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10517,
+      "name": "(S)FACE PAINTING",
+      "category": "day2",
+      "date": "10.4 - 10.6",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "반짝이는 우주를 품다🌌\n오직 동덕 uniVERSE 에서만 즐길 수 있는 글리터 페이스 페인팅으로 축제의 분위기를 더욱 즐겨보세요!",
+      "image": "booth_image/105/10517.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10601,
+      "name": "아르테미솜",
+      "category": "day3",
+      "date": "10.04 - 10.06 12:00-소진시까지",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "참가자들은 다트를 던져 직접 나만의 별자리를 생성합니다. 솜솜이들이 달과 화살의 여신 ‘아르테미스’가 되어 오늘 하루를 기념해보세요!🌟",
+      "image": "booth_image/106/10601.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10602,
+      "name": "별들의 전쟁",
+      "category": "day3",
+      "date": "10.06 16:20-17:50",
+      "place": "동덕여자대학교 백주년기념관 홀",
+      "introduce": "동덕 uniVERSE🪐 명창들의 모임! 참가자들은 퍼스널 행성가면과 닉네임으로 정체를 숨긴 채 전쟁에 참여하게 됩니다. 노래하는 행성들의 긴장감 넘치는 경연을 함께 즐겨주세요!🎤\n상품 : 본선 진출자 (5인) - 기프티콘 2만원권\n2위 - 노래방 마이크 & 스피커\n1위 - 소니 헤드셋",
+      "image": "booth_image/106/10602.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10603,
+      "name": "이벤트 티켓",
+      "category": "day3",
+      "date": "10.04 - 10.06 12:00 매일 선착순 60장 배부",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "우주선 티켓을 발급받고 동덕 uniVERSE로 떠나보세요! 이벤트 티켓은 매일 SNS(인스타그램, 에브리타임) 해시태그 인증 이벤트를 통해 선착순으로 발급받으실 수 있습니다.\n",
+      "image": "booth_image/106/10603.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10604,
+      "name": "스탬프 투어",
+      "category": "day3",
+      "date": "10.04 - 10.06 ",
+      "place": "동덕여자대학교 운동장 인포 부스",
+      "introduce": "축제운영위원회에서 준비한 다양한 프로그램과 제휴 업체 부스를 체험하고 선물도 받아가세요! 스탬프 투어 용지는 인포 부스에서 받을 수 있습니다.",
+      "image": "booth_image/106/10604.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10605,
+      "name": "Flea-net D",
+      "category": "day3",
+      "date": "10.04 - 10.06 13:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "학우분들이 직접 준비하신 물품들을 구경하고, 마음에 드는 물건도 득템해가세요!",
+      "image": "booth_image/106/10605.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10606,
+      "name": "우주 속 지구를 낚아라",
+      "category": "day3",
+      "date": "10.04 - 10.06 15:00~19:00 (재정비 시간-17:00~17:20)",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "깜깜한 우주에서 지구를 찾고 상품도 얻어가세요!",
+      "image": "booth_image/106/10606.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10607,
+      "name": "솜솜타로",
+      "category": "day3",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "솜솜 타로에서 나의 운세를 확인해보세요! 타로 전문 학우분들께 직접 사주 타로를 통해 나의 운세를 알아볼 수 있습니다.",
+      "image": "booth_image/106/10607.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10608,
+      "name": "무엇이든 뽑아보솜",
+      "category": "day3",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "오늘의 운세를 뽑아보세요 🍀",
+      "image": "booth_image/106/10608.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10609,
+      "name": "솜612 포토존",
+      "category": "day3",
+      "date": "10.04 - 10.06",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "축제에서 인생샷을 건지고 싶지 않으신가요? 밝게 빛나는 달 포토존에서 인생 사진을 건져보세요!",
+      "image": "booth_image/106/10609.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10610,
+      "name": "솜솜 우주필름",
+      "category": "day3",
+      "date": "10/4 - 10/6 12:00 ~ 22:00",
+      "place": "동덕여대 민주광장 앞",
+      "introduce": "맞춤제작 2023 우주 컨셉 인생 네컷 ‘우주필름'\n\n매년 큰 화제를 불러일으키는 포토부스, 이번 축제를 위해 특별 제작된 프레임으로 인생사진 찍어가세요! 👾\n\n가격: 1+1 4000원 (현금, 카드 가능)",
+      "image": "booth_image/106/10610.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10611,
+      "name": "솜솜 은하수 광장",
+      "category": "day3",
+      "date": "10.04 - 10.05 18:00 - 22:00 /10.06 17:00 - 21:00",
+      "place": "운동장 구령대 맞은편 (나무데크)",
+      "introduce": "🌌 솜솜은하수광장 🌌\n\n시끌벅적한 축제 속에서 찾은 여유\n\n<솜솜은하수광장>에서 친구, 선배, 후배와 함께 축제날 밤의 낭만을 즐겨보세요 🌝",
+      "image": "booth_image/106/10611.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10612,
+      "name": "솜락실 ; 솜솜지구오락실 ",
+      "category": "day3",
+      "date": "10.04 - 10.06 12:00~20:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "진정한 우주인이 되고 싶어 우주로 향하는 솜솜, 그런데...?!\n우주인이 되기 위한 체력단련실, 솜락실로 솜솜이분들을 초대합니다!!💪\n",
+      "image": "booth_image/106/10612.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10613,
+      "name": "솜플래닛 타꾸샵",
+      "category": "day3",
+      "date": "10.04 - 10.06 12:00~22:00",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "우주인이 된 솜솜이, 몸에서 우주의 표식이 피어나기 시작한다!!🛸 우주의 표식을 단 솜솜이를 발견하면 외계어로 인사해주자! 삐리빠라뽀👽",
+      "image": "booth_image/106/10613.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10614,
+      "name": "🌌우주특공솜: 비밀서류를 찾아라!🚀",
+      "category": "day3",
+      "date": "10.5 - 10.6",
+      "place": "대학원 403호",
+      "introduce": "평화롭던 동덕의 숨겨진 비밀기지... \n그러던 어느 날 누군가 몰래 들어와 동덕의 TOP SECRET을 훔쳐갔다..!?\n우주특공솜이 되어 비밀서류를 훔쳐간 범인을 찾아 지구를 지켜주세요!\n",
+      "image": "booth_image/106/10614.png"
+    }
+  },
+  {
+    "model": "contents.booth",
+    "fields": {
+      "booth_id": 10615,
+      "name": "(S)FACE PAINTING",
+      "category": "day3",
+      "date": "10.4 - 10.6",
+      "place": "동덕여자대학교 운동장",
+      "introduce": "반짝이는 우주를 품다🌌\n오직 동덕 uniVERSE 에서만 즐길 수 있는 글리터 페이스 페인팅으로 축제의 분위기를 더욱 즐겨보세요!",
+      "image": "booth_image/106/10615.png"
+    }
+  }
+]
