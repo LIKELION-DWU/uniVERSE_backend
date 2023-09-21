@@ -153,7 +153,7 @@ class BoothSearchView(generics.ListAPIView):
         return Response(data)
     
 #방명록 생성
-class GuestBookCreateView(APIView):
+class GuestBookView(APIView):
     def post(self, request):
         serializer = BookSerializer(data=request.data)
         #micro 초 단위
@@ -162,14 +162,12 @@ class GuestBookCreateView(APIView):
 
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data)       
-
-#방명록 목록
-class GuestBookListView(APIView):
+            return Response(serializer.data, status=status.HTTP_200_OK)       
+        
     def get(self, request):
         books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 # 부스배치도 목록 
 # day01
