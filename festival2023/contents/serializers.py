@@ -23,10 +23,16 @@ class BoothSerializer(ModelSerializer):
         fields = ['image', 'name', 'introduce']
 
 class BoothSearchSerializer(serializers.ModelSerializer):
+    # image 필드를 직렬화할 때 이미지 경로를 반환하도록 설정
+    image = serializers.SerializerMethodField()
+
     class Meta:
         model = models.Booth
         fields = ['name', 'image', 'introduce']
 
+    def get_image(self, obj):
+        return obj.image.url
+    
 class BoothDetialSerailizer(serializers.ModelSerializer) :
     class Meta : 
         model = models.Booth
