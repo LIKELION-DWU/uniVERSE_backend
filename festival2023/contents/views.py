@@ -26,9 +26,10 @@ class StudentInfoView(APIView):
             
             # 학생 정보가 추가된 후에 참여율 순위를 업데이트
             colleges = College.objects.all()
+
             college_data = []
             for college in colleges:
-                participation_rate = self.calculate_participation_rate(college) * 100
+                participation_rate = round(self.calculate_participation_rate(college), 2)
                 college_data.append({
                     'college': college.college,
                     'participation_rate': participation_rate,
@@ -70,16 +71,40 @@ class CollegeRankListView(APIView):
         # 단과대학별 참여율을 계산하여 반환
         colleges = College.objects.all()
         college_data = []
-        for college in colleges:
+
+        # 참여율이 0%인 대학만 가져오기
+        zeroColleges = colleges.filter(total=0)
+
+        # 모든 대학의 참여율이 0%일때 -> 초기상태
+        if zeroColleges.exists():
+            zeroColleges = zeroColleges.order_by('college')
+        else:
+            colleges = colleges.order_by('college')
+
+        for college in zeroColleges:
             participation_rate = self.calculate_participation_rate(college)
             college_data.append({
                 'college': college.college,
                 'participation_rate': participation_rate,
             })
 
-        # 참여율을 기준으로 내림차순으로 정렬
-        college_data.sort(key=lambda x: x['participation_rate'], reverse=True)
-        
+        # 나머지 대학들의 참여율을 기준으로 내림차순으로 정렬
+        participation_colleges = colleges.exclude(total=0)
+        participation_data = []
+        for college in participation_colleges:
+            participation_rate = self.calculate_participation_rate(college)
+            participation_data.append({
+                'college': college.college,
+                'participation_rate': participation_rate,
+            })
+
+        # 참여율로 내림차순정렬
+        participation_data.sort(key=lambda x: x['participation_rate'], reverse=True)
+
+        # 데이터를(zero, 아닌거)모든 데이터 합치기
+        college_data.extend(participation_data)
+
+
         # 순위를 계산하고 추가
         rank = 1
         prev_rate = None
@@ -153,7 +178,7 @@ class BoothSearchView(generics.ListAPIView):
         return Response(data)
     
 #방명록 생성
-class GuestBookCreateView(APIView):
+class GuestBookView(APIView):
     def post(self, request):
         serializer = BookSerializer(data=request.data)
         #micro 초 단위
@@ -162,14 +187,12 @@ class GuestBookCreateView(APIView):
 
         if serializer.is_valid():
             serializer.save()
-            return Response(serializer.data)       
-
-#방명록 목록
-class GuestBookListView(APIView):
+            return Response(serializer.data, status=status.HTTP_200_OK)       
+        
     def get(self, request):
         books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 # 부스배치도 목록 
 # day01
