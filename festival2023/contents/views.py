@@ -82,7 +82,7 @@ class CollegeRankListView(APIView):
             colleges = colleges.order_by('college')
 
         for college in zeroColleges:
-            participation_rate = self.calculate_participation_rate(college)
+            participation_rate = round(self.calculate_participation_rate(college), 2)
             college_data.append({
                 'college': college.college,
                 'participation_rate': participation_rate,
@@ -92,7 +92,7 @@ class CollegeRankListView(APIView):
         participation_colleges = colleges.exclude(total=0)
         participation_data = []
         for college in participation_colleges:
-            participation_rate = self.calculate_participation_rate(college)
+            participation_rate = round(self.calculate_participation_rate(college), 2)
             participation_data.append({
                 'college': college.college,
                 'participation_rate': participation_rate,
