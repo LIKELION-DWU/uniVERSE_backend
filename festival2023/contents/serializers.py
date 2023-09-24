@@ -33,7 +33,7 @@ class BoothSearchSerializer(serializers.ModelSerializer):
     def get_image(self, obj):
         return obj.image.url
     
-class BoothDetialSerailizer(serializers.ModelSerializer) :
+class BoothDetailSerailizer(serializers.ModelSerializer) :
     class Meta : 
         model = models.Booth
         fields = ['booth_id', 'image', 'name', 'introduce', 'place', 'date']
