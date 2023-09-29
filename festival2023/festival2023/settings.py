@@ -36,7 +36,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -57,6 +57,14 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     
     'corsheaders',
+
+    
+]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+
 ]
 
 MIDDLEWARE = [
@@ -88,7 +96,9 @@ ROOT_URLCONF = 'festival2023.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['client'],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'client'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -162,15 +172,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# static -files 경로 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
-        # 실제 static 파일은 모두 client 측에서 소유
-        os.path.join(BASE_DIR, 'client/static')
-    ]
+    os.path.join(BASE_DIR, 'client/static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
