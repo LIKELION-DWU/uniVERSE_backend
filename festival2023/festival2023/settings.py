@@ -90,7 +90,6 @@ CORS_ALLOW_METHODS = [
 'PUT',
 ]
 
-
 ROOT_URLCONF = 'festival2023.urls'
 
 TEMPLATES = [
